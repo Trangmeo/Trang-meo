@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+ 
 
 <div class="row">
   <div class="col-md-9">
@@ -23,6 +23,7 @@
         <strong><%= comment.user_name %></strong>
       </div>
       <div class="col-md-8"><%= comment.body %></div>
+      <%= image_tag(comment.picture_url(:thumb)) if comment.picture.present? %>
       <%= link_to 'Delete', comment_path(comment), method: :delete, class: "col-md-1 btn btn-danger", data: { confirm: 'Are you sure?' } %>
     </div>
   <% end %>

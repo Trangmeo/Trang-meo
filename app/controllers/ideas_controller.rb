@@ -26,7 +26,7 @@ class IdeasController < ApplicationController
   # POST /ideas
   # POST /ideas.json
   def create
-    @comment = comment.new(comment_params)
+    @idea= Idea.new(idea_params)
 
     respond_to do |format|
       if @idea.save
