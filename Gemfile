@@ -12,6 +12,7 @@ end
 
 gem 'carrierwave'
 gem 'devise'
+gem 'gravtastic'
 gem 'mini_magick', '3.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

@@ -62,4 +62,5 @@ root :to => redirect('/ideas')
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resource :user, only: [:edit, :update]
 end
